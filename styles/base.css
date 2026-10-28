@@ -1,4 +1,4 @@
-/* General Styles & Variables */
+
 :root {
   --primary-color: #1d4ed8;
   --header-bg: #1e293b;
@@ -16,7 +16,7 @@ body {
   background-color: #f8fafc;
 }
 
-/* Header Styling */
+
 header {
   background-color: var(--header-bg);
   color: white;
@@ -32,7 +32,7 @@ header {
   letter-spacing: 0.05em;
 }
 
-/* Navigation Menu - Flexbox */
+
 nav {
   display: flex;
   justify-content: center;
@@ -55,13 +55,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Content Layout - Grid */
+
 main {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Left card is wider, right card is narrower */
+  grid-template-columns: 2fr 1fr; 
   gap: 2rem;
 }
 
@@ -73,7 +73,7 @@ main h1 {
   color: #0f172a;
 }
 
-/* Card Styling */
+
 .card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -92,12 +92,12 @@ main h1 {
   letter-spacing: 0.025em;
 }
 
-/* Card Content Padding */
+
 .card-content {
   padding: 1.25rem;
 }
 
-/* About Me Card Layout */
+
 .profile-container {
   display: flex;
   gap: 1rem;
@@ -118,7 +118,7 @@ main h1 {
   flex-shrink: 0;
 }
 
-/* Sub-section (e.g., Country info) */
+
 .sub-section {
   border-top: 1px solid var(--border-color);
   padding-top: 1rem;
@@ -150,7 +150,7 @@ main h1 {
   margin: 0;
 }
 
-/* Web Dev Resources Card List */
+
 .card ul {
   margin: 0;
   padding-left: 1.5rem;
@@ -169,7 +169,7 @@ main h1 {
   text-decoration: underline;
 }
 
-/* Footer Styling */
+
 footer {
   background-color: var(--header-bg);
   color: white;
