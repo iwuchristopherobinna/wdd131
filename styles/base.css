@@ -1,0 +1,184 @@
+/* General Styles & Variables */
+:root {
+  --primary-color: #1d4ed8;
+  --header-bg: #1e293b;
+  --card-bg: #ffffff;
+  --card-header-bg: #1e3a8a;
+  --text-color: #1f2937;
+  --border-color: #cbd5e1;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: #f8fafc;
+}
+
+/* Header Styling */
+header {
+  background-color: var(--header-bg);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation Menu - Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #0f172a;
+  padding: 0.75rem 0;
+}
+
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* Main Content Layout - Grid */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left card is wider, right card is narrower */
+  gap: 2rem;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  background-color: var(--card-header-bg);
+  color: white;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+/* Card Content Padding */
+.card-content {
+  padding: 1.25rem;
+}
+
+/* About Me Card Layout */
+.profile-container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.profile-container p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.profile-img {
+  width: 130px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Sub-section (e.g., Country info) */
+.sub-section {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.sub-section h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #334155;
+}
+
+.country-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flag-img {
+  width: 120px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.country-info p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Web Dev Resources Card List */
+.card ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.card ul li {
+  margin-bottom: 0.75rem;
+}
+
+.card ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--header-bg);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
