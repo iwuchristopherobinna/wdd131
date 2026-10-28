@@ -1,10 +1,10 @@
 
 :root {
-  --primary-color: #1d4ed8;
-  --header-bg: #1e293b;
+  --primary-color: #0D9488;
+  --header-bg: #FFCBA4;
   --card-bg: #ffffff;
   --card-header-bg: #1e3a8a;
-  --text-color: #1f2937;
+  --text-color: #1E1E1E;
   --border-color: #cbd5e1;
 }
 
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  background-color: #f8fafc;
+  background-color: #F1F5F9;
 }
 
 
@@ -176,7 +176,7 @@ footer {
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 3rem;
-  font-size: 0.95rem;
+  font-size: rem;
 }
 
 footer p {
