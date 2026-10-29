@@ -1,10 +1,10 @@
 
 :root {
-  --primary-color: #0D9488;
-  --header-bg: #FFCBA4;
+  --primary-color: #1d4ed8;
+  --header-bg: #1e293b;
   --card-bg: #ffffff;
   --card-header-bg: #1e3a8a;
-  --text-color: #1E1E1E;
+  --text-color: #1f2937;
   --border-color: #cbd5e1;
 }
 
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  background-color: #F1F5F9;
+  background-color: #f8fafc;
 }
 
 
