@@ -54,7 +54,8 @@ nav {
 }
 
 nav.open {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation {
