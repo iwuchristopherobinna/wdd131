@@ -1,0 +1,25 @@
+
+@media (min-width: 37.5em) {
+    #menu {
+        display: none; 
+    }
+
+    nav {
+        position: static;
+        display: block;
+        background-color: transparent;
+        width: auto;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
