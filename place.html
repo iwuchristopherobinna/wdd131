@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria - Country Profile | Place Project</title>
+    <meta name="description" content="Explore Nigeria's geographic data, weather details, and culture in my WDD 131 place project.">
+    <meta name="author" content="Iwu Obinna Christopher jr.">
+    
+    
+    <link rel="stylesheet" href="styles/place.css">
+    
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Landscape of Nigeria" width="1500" height="750">
+            </picture>
+        </div>
+
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> 923,768 sq km</li>
+                <li><span>Population:</span> 225 Million</li>
+                <li><span>Capital:</span> Abuja</li>
+                <li><span>Languages:</span> English, Hausa, Yoruba, Igbo</li>
+                <li><span>Currency:</span> Nigerian Naira (₦)</li>
+                <li><span>Time Zone:</span> WAT (UTC+1)</li>
+                <li><span>Calling Code:</span> +234</li>
+                <li><span>Internet TLD:</span> .ng</li>
+            </ul>
+        </section>
+        <section class="card weather-card">
+            <h2 class="weather-title">Weather</h2>
+            
+            <img class="weather-icon-mobile" src="images/weather.svg" alt="Weather icon showing partly cloudy conditions" width="48" height="48">
+            
+            <ul>
+                <li><span>Temperature:</span> <span id="temp">9</span> °C</li>
+                <li><span>Conditions:</span> Partly Cloudy</li>
+                <li><span>Wind:</span> <span id="wind">12</span> km/h</li>
+                <li><span>Wind Chill:</span> <span id="chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Iwu Obinna Christopher jr. | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

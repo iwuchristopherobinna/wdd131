@@ -1,0 +1,287 @@
+/* CSS Variables */
+:root {
+    --primary-color: #008751;   /* Nigerian Flag Green */
+    --secondary-color: #ffffff;
+    --text-color: #1a1a1a;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --border-color: #cccccc;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.2rem;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section (Mobile Default) */
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cards General Styling */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    margin: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.card li span:first-child {
+    font-weight: bold;
+}
+
+/* Mobile Weather Icon */
+.weather-icon-mobile {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+}
+
+.weather-title::after {
+    content: "";
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop / Wider View Layout (CSS Grid Overlay) */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 280px 1fr 280px;
+        grid-template-rows: auto;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    /* Hero spans full width as background */
+    .hero {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        z-index: 1;
+    }
+
+    /* Data card overlaid on left */
+    .data-card {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        width: 260px;
+        margin: 2rem;
+        backdrop-filter: blur(4px);
+    }
+
+    /* Weather card overlaid on right, lowered */
+    .weather-card {
+        grid-column: 3;
+        grid-row: 1;
+        z-index: 2;
+        width: 260px;
+        margin: 2rem;
+        margin-top: 8rem;
+        backdrop-filter: blur(4px);
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-title::after {
+        
+        font-size: 1.1em;
+    }
+}/* CSS Variables */
+:root {
+    --primary-color: #008751;   /* Nigerian Flag Green */
+    --secondary-color: #ffffff;
+    --text-color: #1a1a1a;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --border-color: #cccccc;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.2rem;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section (Mobile Default) */
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cards General Styling */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    margin: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.card li span:first-child {
+    font-weight: bold;
+}
+
+/* Mobile Weather Icon */
+.weather-icon-mobile {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+}
+
+.weather-title::after {
+    content: "";
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop / Wider View Layout (CSS Grid Overlay) */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 280px 1fr 280px;
+        grid-template-rows: auto;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    /* Hero spans full width as background */
+    .hero {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        z-index: 1;
+    }
+
+    /* Data card overlaid on left */
+    .data-card {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        width: 260px;
+        margin: 2rem;
+        backdrop-filter: blur(4px);
+    }
+
+    /* Weather card overlaid on right, lowered */
+    .weather-card {
+        grid-column: 3;
+        grid-row: 1;
+        z-index: 2;
+        width: 260px;
+        margin: 2rem;
+        margin-top: 8rem;
+        backdrop-filter: blur(4px);
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-title::after {
+        content: " ⛅";
+        font-size: 1.1em;
+    }
+}
