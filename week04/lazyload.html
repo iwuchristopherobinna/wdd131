@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Lazy Loading Images</title>
+    <meta name="description" content="Demonstration of HTML lazy loading and CSS fade-in animations.">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading Demonstration</h1>
+        
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/800x500/7-9cd2f00b611ffbaa5577579b4f863062a0262b46.jpeg" alt="Arequipa Peru Temple" loading="lazy" width="400" height="600">
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/800x500/salt-lake-temple-763229.jpg" alt="Salt lake temple" loading="lazy" width="400" height="650">
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/800x500/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple scene 3" loading="lazy" width="400" height="600">
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/800x500/manila-philippines-temple-lds-129585-wallpaper.jpg" alt="Manila manila philippines temple" loading="lazy" width="400" height="700">
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/800x500/madrid-spain-mormon-temple-954942-wallpaper.jpg" alt="madrid spain Temple" loading="lazy" width="400" height="600">
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/nauvoo-illinois/800x500/nauvoo-temple-756497-wallpaper.jpg" alt="nauvoo temple" loading="lazy" width="400" height="650">
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Iwu Obinna Christopher jr | WDD 131 | Lazy Loading Activity</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
