@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Plan | Personal Portfolio</title>
+    <meta name="description" content="Site plan for my personal portfolio website covering site name, purpose, visitor scenarios, color schema, typography, and home page wireframes.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <h1>Website Project Plan</h1>
+        <p>Subject: Professional Personal Portfolio | WDD 131</p>
+    </header>
+
+    <main>
+  
+        <section class="card">
+            <h2>1. Site Name</h2>
+            <p><strong>Proposed Name:</strong> Iwu Christopher Portfolio</p>
+            <p><strong>Reasoning:</strong> Using my own name puts personal identity and accountability front and center for recruiters, hiring managers, and freelance clients looking for reliable work and clear communication.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Site Purpose</h2>
+            <p>This website serves as a central online hub presenting my background, technical and creative skills, and completed projects. It is organized into four core sections:</p>
+            <ul>
+                <li><strong>Home / Landing Page:</strong> A concise introduction highlighting who I am, what I build, and quick navigation to my work and contact options.</li>
+                <li><strong>About Me:</strong> Details on my professional background, learning journey, interests, and career goals.</li>
+                <li><strong>Projects / Work:</strong> A curated showcase of key projects, coursework, and creative builds with descriptions and live or repository links.</li>
+                <li><strong>Contact:</strong> A contact form and direct links to professional profiles (such as GitHub and Interstride) along with social channels (such as Facebook).</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>3. Scenarios</h2>
+            <p>Questions from prospective employers, collaborators, or clients that shape the content on the site:</p>
+            <ul>
+                <li>What projects have you built recently, and can I inspect the code or live demos to judge your problem-solving and layout skills?</li>
+                <li>What is your background, core skill set, and career direction, and how do you approach new technical challenges?</li>
+                <li>How can I reach you directly for an opportunity, or check your profiles on GitHub, Interstride, and Facebook?</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>4. Color Schema</h2>
+            <p>Inspired by a minimal neutral aesthetic, this palette relies on dark surfaces, subtle gray borders, and crisp light neutrals for a clean, distraction-free portfolio feel[cite: 1].</p>
+
+            <div class="color-grid">
+                <div class="color-swatch shadow-black-swatch">
+                    <strong>Shadow Black</strong>
+                    <span>#101014</span>
+                    <small>Primary background for the page canvas, header, footer, and dark surface blocks[cite: 1].</small>
+                </div>
+                <div class="color-swatch slate-gray-swatch">
+                    <strong>Slate Gray</strong>
+                    <span>#3d3d47</span>
+                    <small>Used for subtle card borders, pills/badges, dividers, and secondary UI accents[cite: 1].</small>
+                </div>
+                <div class="color-swatch light-gray-blue-swatch">
+                    <strong>Light Gray-Blue</strong>
+                    <span>#d0d1db</span>
+                    <small>Used for headings, primary buttons/highlights, and key emphasis text against dark backgrounds[cite: 1].</small>
+                </div>
+                <div class="color-swatch warm-gray-swatch">
+                    <strong>Warm Gray</strong>
+                    <span>#e6e6e6</span>
+                    <small>Used for body copy, descriptions, and list items to keep reading comfortable on dark backgrounds[cite: 1].</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>5. Typography</h2>
+            <div class="typography-sample">
+                <h3 class="font-heading-demo">Heading Font: Plus Jakarta Sans (Semi-Bold / Bold)</h3>
+                <p><strong>Application:</strong> Applied to the page title, section headings, and card titles to give a crisp, modern editorial hierarchy.</p>
+            </div>
+            <hr>
+            <div class="typography-sample">
+                <p class="font-body-demo"><strong>Body Font: Inter (Regular / Medium / Semi-Bold)</strong></p>
+                <p><strong>Application:</strong> Applied to body text, bullet points, captions, and form/link descriptions for clear legibility at small and large sizes.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>6. Home Page Wireframes</h2>
+            <p>Layout structure for the home page across mobile and desktop viewports.</p>
+
+            <div class="wireframe-container">
+                
+                <div class="wireframe-box">
+                    <h3>Mobile View </h3>
+                    <svg viewBox="0 0 260 540" class="wireframe-svg" role="img" aria-label="Mobile home page wireframe">
+                        <rect x="5" y="5" width="250" height="530" fill="#101014" stroke="#3d3d47" stroke-width="2" rx="8"/>
+                        
+                        <rect x="15" y="15" width="230" height="40" fill="#17171d" stroke="#3d3d47"/>
+                        <text x="25" y="40" fill="#d0d1db" font-size="12" font-family="sans-serif">Brand / Name</text>
+                        <text x="215" y="40" fill="#e6e6e6" font-size="16" font-family="sans-serif">☰</text>
+                        
+                        <rect x="15" y="65" width="230" height="115" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="35" y="95" fill="#d0d1db" font-size="12" font-family="sans-serif">Intro: Who I Am &amp; What I Do</text>
+                        <rect x="25" y="112" width="95" height="26" fill="#d0d1db" rx="4"/>
+                        <text x="42" y="129" fill="#101014" font-size="10" font-family="sans-serif">View Projects</text>
+                        <rect x="130" y="112" width="105" height="26" fill="none" stroke="#3d3d47" rx="4"/>
+                        <text x="156" y="129" fill="#e6e6e6" font-size="10" font-family="sans-serif">Contact Me</text>
+                       
+                        <rect x="15" y="192" width="230" height="80" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="68" y="236" fill="#e6e6e6" font-size="12" font-family="sans-serif">About Me Summary</text>
+                      
+                        <rect x="15" y="284" width="230" height="105" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="56" y="340" fill="#e6e6e6" font-size="12" font-family="sans-serif">Featured Projects Grid</text>
+                        
+                        <rect x="15" y="401" width="230" height="75" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="30" y="442" fill="#e6e6e6" font-size="11" font-family="sans-serif">Contact &amp; GitHub / Interstride / FB</text>
+                      
+                        <rect x="15" y="488" width="230" height="35" fill="#17171d" stroke="#3d3d47"/>
+                        <text x="92" y="510" fill="#d0d1db" font-size="11" font-family="sans-serif">Footer</text>
+                    </svg>
+                </div>
+                <div class="wireframe-box">
+                    <h3>Desktop View </h3>
+                    <svg viewBox="0 0 460 390" class="wireframe-svg" role="img" aria-label="Desktop home page wireframe">
+                        <rect x="5" y="5" width="450" height="380" fill="#101014" stroke="#3d3d47" stroke-width="2" rx="4"/>
+                        <!-- Header & Nav -->
+                        <rect x="15" y="15" width="430" height="40" fill="#17171d" stroke="#3d3d47"/>
+                        <text x="25" y="40" fill="#d0d1db" font-size="12" font-family="sans-serif">Brand / Name</text>
+                        <text x="220" y="40" fill="#e6e6e6" font-size="11" font-family="sans-serif">Home | About | Projects | Contact</text>
+                        <!-- Split Hero / Intro -->
+                        <rect x="15" y="65" width="275" height="115" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="30" y="98" fill="#d0d1db" font-size="12" font-family="sans-serif">Intro: Who I Am &amp; Core Skills</text>
+                        <rect x="30" y="118" width="110" height="28" fill="#d0d1db" rx="4"/>
+                        <text x="53" y="136" fill="#101014" font-size="11" font-family="sans-serif">Explore Work</text>
+                        <rect x="302" y="65" width="143" height="115" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="334" y="126" fill="#e6e6e6" font-size="12" font-family="sans-serif">About &amp; Goals</text>
+                        <!-- 3-Column Projects Showcase -->
+                        <rect x="15" y="192" width="136" height="115" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="48" y="253" fill="#e6e6e6" font-size="11" font-family="sans-serif">Project 1 Card</text>
+
+                        <rect x="162" y="192" width="136" height="115" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="195" y="253" fill="#e6e6e6" font-size="11" font-family="sans-serif">Project 2 Card</text>
+
+                        <rect x="309" y="192" width="136" height="115" fill="#18181f" stroke="#3d3d47"/>
+                        <text x="342" y="253" fill="#e6e6e6" font-size="11" font-family="sans-serif">Project 3 Card</text>
+                        <!-- Footer with Contact & Profiles -->
+                        <rect x="15" y="320" width="430" height="52" fill="#17171d" stroke="#3d3d47"/>
+                        <text x="28" y="350" fill="#d0d1db" font-size="11" font-family="sans-serif">Contact Form Link | GitHub | Interstride | Facebook | © 2026</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Iwu Obinna Christopher jr | Personal Portfolio Site Plan | WDD 131</p>
+    </footer>
+</body>
+</html>
