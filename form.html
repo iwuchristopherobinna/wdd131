@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="description" content="Submit a product review with rating, installation date, useful features, and comments.">
+  <meta name="author" content="Iwu Obinna Christopher Jr.">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html" class="review-form">
+    
+      <div class="form-group">
+        <label for="product">Product Name <span class="required-marker" aria-hidden="true">*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group rating-group">
+        <legend>Overall Rating <span class="required-marker" aria-hidden="true">*</span></legend>
+        <div class="rating-options">
+          <div class="rating-item">
+            <label for="rating-1">☆</label>
+            <input type="radio" id="rating-1" name="rating" value="1" required>
+            <span class="sr-only">1 Star</span>
+          </div>
+          <div class="rating-item">
+            <label for="rating-2">☆☆</label>
+            <input type="radio" id="rating-2" name="rating" value="2" required>
+            <span class="sr-only">2 Stars</span>
+          </div>
+          <div class="rating-item">
+            <label for="rating-3">☆☆☆</label>
+            <input type="radio" id="rating-3" name="rating" value="3" required>
+            <span class="sr-only">3 Stars</span>
+          </div>
+          <div class="rating-item">
+            <label for="rating-4">☆☆☆☆</label>
+            <input type="radio" id="rating-4" name="rating" value="4" required>
+            <span class="sr-only">4 Stars</span>
+          </div>
+          <div class="rating-item">
+            <label for="rating-5">☆☆☆☆☆</label>
+            <input type="radio" id="rating-5" name="rating" value="5" required>
+            <span class="sr-only">5 Stars</span>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="install-date">Date of Installation <span class="required-marker" aria-hidden="true">*</span></label>
+        <input type="date" id="install-date" name="installDate" required>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Which features did you find useful in the product? <span class="hint">(Check all that apply)</span></legend>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-durability" name="features" value="durability">
+            <label for="feature-durability">Durability</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+            <label for="feature-ease">Ease of Use</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-performance" name="features" value="performance">
+            <label for="feature-performance">Performance</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-design" name="features" value="design">
+            <label for="feature-design">Design</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="written-review">Written Review <span class="hint">(Optional)</span></label>
+        <textarea id="written-review" name="writtenReview" rows="5" placeholder="Share your experience with this product..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="user-name">Your Name <span class="hint">(Optional)</span></label>
+        <input type="text" id="user-name" name="userName" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Post Review" class="submit-btn">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> Iwu Obinna Christopher Jr. | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
